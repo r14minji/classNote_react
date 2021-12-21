@@ -1,8 +1,10 @@
 import './css/style.css';
 import Footer from './components/Footer.js';
+import Panel from './components/Panel';
 import {Logo, Menu} from './components/Header.js';
 
-const name1 = "David"
+
+
 
 function App() {
   return (
@@ -12,51 +14,13 @@ function App() {
         <Logo />
         <Menu/>
 
+
           <section>
-            <article>
-              <div className="inner">
-                {name1}
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Andy
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Michael
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Julia
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Christoper
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Emma
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Catherin
-              </div>
-            </article>
-            <article>
-              <div className="inner">
-                Alice
-              </div>
-            </article>
+            <Panel />
           </section>
+
+
         <Footer />
-
-
       </figure>
     </div>
   );

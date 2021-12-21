@@ -1,19 +1,38 @@
-function Logo(){
-  return (
-      <h1>
-        <strong>DCODELAB</strong><br></br>
-        <span>UI/UX DESIGN&DEVELOPMENT</span>
-      </h1>
-  )
-}
-
-const Menu = ()=>{
-
+function Header(){
   return(
-    <a href="#" className="menu">
-      <i className="fas fa-bars"></i>
-    </a>
+    <>
+      <h1>
+      <strong>DECODELAB</strong><br />
+      <span>UI/UX DESIGN&DEVELOPMENT</span>
+      </h1> 
+      <a href="#" className="menu">
+        <i className="fas fa-bars"></i>
+      </a> 
+  </>
   )
 }
 
-export {Logo, Menu};
+export default Header;
+
+
+
+
+// function Logo(){
+//   return (
+//       <h1>
+//         <strong>DCODELAB</strong><br></br>
+//         <span>UI/UX DESIGN&DEVELOPMENT</span>
+//       </h1>
+//   )
+// }
+
+// const Menu = ()=>{
+
+//   return(
+//     <a href="#" className="menu">
+//       <i className="fas fa-bars"></i>
+//     </a>
+//   )
+// }
+
+// export {Logo, Menu};

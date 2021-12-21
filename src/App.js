@@ -8,20 +8,11 @@ import {Logo, Menu} from './components/Header.js';
 
 function App() {
   return (
-    <div className="App">
-      {/* 전체 레이아웃 */}
-      <figure>
-        <Logo />
-        <Menu/>
-
-
-          <section>
-            <Panel />
-          </section>
-
-
-        <Footer />
-      </figure>
+    <div className="APP">
+      <ul className="btns">
+        <li>button1</li>
+        <li>button2</li>
+      </ul>
     </div>
   );
 }

@@ -9,7 +9,65 @@ ul, li {
 a {
   text-decoration: none; }
 
-.btns li {
-  border: 1px solid aqua; }
+figure {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, hotpink, violet); }
+  figure h1 {
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+    font-size: 0; }
+    figure h1 strong {
+      font: 36px/1 'arial';
+      color: #fff;
+      letter-spacing: 1px; }
+    figure h1 span {
+      font: 12px/1 'arial';
+      color: #fff;
+      letter-spacing: 2px;
+      opacity: 0.8s; }
+  figure .menu {
+    position: absolute;
+    top: 8vh;
+    right: 4vw;
+    font-size: 24px;
+    color: #fff; }
+  figure section {
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -220px; }
+    figure section article {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+      figure section article .inner {
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px; }
+  figure > p {
+    position: absolute;
+    bottom: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font: 12px/1 'arial';
+    color: #fff;
+    letter-spacing: 2px;
+    opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */

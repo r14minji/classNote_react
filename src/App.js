@@ -1,27 +1,26 @@
 import './css/style.css';
-import {Logo, Menu} from './components/Header';
-import Footer from './components/Footer'
-
+import { Logo, Menu } from './components/Header.js';
+import Panel from './components/Panel.js';
+import Footer from './components/Footer.js';
 
 
 
 function App() {
-  return (
-    <div className="App">
+	return (
+		<div className="App">
 
-    <figure>
-      <Logo />
-      <Menu />
+			<figure>
+				<Logo />
+				<Menu />
 
-      
-      
-      <Footer />
-    </figure>
+				<section>
+					<Panel />
+				</section>
 
-
-
-    </div>
-  );
+				<Footer />
+			</figure>
+		</div>
+	);
 }
 
 export default App;

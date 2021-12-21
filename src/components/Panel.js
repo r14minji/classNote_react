@@ -2,20 +2,20 @@ function Panel() {
 	const arr = ['Blizzards', 'Calm', 'Dusty_Road', 'Escape', 'Payday', 'Retreat', 'Seasonal', 'Vespers'];
 	const path = process.env.PUBLIC_URL;
 	const deg = 360/arr.length;	
-  const btnStyle = {position : 'fixed', top: 0, left: 0}
-
-  function changeArr(txt){
-    arr[0] = txt;
-      console.log(arr);
-  }
+	const btnStyle = {position: 'fixed', top:0, left:0}
+	
+	function changeArr(txt){
+		arr[0] = txt;
+		console.log(arr);
+	}
 
 	return (
 		<>
-    <button style={btnStyle} onClick={()=>changeArr('Escpe')}>button</button>
+		<button style={btnStyle} onClick={()=>changeArr('Escape')}>button</button>
 		{
-			arr.map((data,index)=>{			
-        let style = {transform: `rotate(${deg*index}deg) translateY(-100vh)`};
-        let imgSrc = `${path}/img/${data}.jpg`;
+			arr.map((data,index)=>{	
+				let style = {transform: `rotate(${deg*index}deg) translateY(-100vh)`}	
+				let imgSrc = `${path}/img/${data}.jpg`
 
 				return (
 					<article key={index} style={style}>
@@ -30,8 +30,7 @@ function Panel() {
 				)
 			})
 		}
-		</>
-		
+		</>		
 	)
 }
 

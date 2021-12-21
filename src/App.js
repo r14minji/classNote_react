@@ -1,5 +1,6 @@
 import './css/style.css';
-import {Logo, Menu} from './components/Header'
+import {Logo, Menu} from './components/Header';
+import Footer from './components/Footer'
 
 
 
@@ -11,7 +12,10 @@ function App() {
     <figure>
       <Logo />
       <Menu />
-      <p>2022 DCODELAB &copy; ALL RIGHTS RESERVED.</p>
+
+      
+      
+      <Footer />
     </figure>
 
 

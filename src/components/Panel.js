@@ -12,6 +12,7 @@ function Panel() {
 	return (
 		<>
 		<button style={btnStyle} onClick={()=>changeArr('Escape')}>button</button>
+		<section>
 		{
 			arr.map((data,index)=>{	
 				let style = {transform: `rotate(${deg*index}deg) translateY(-100vh)`}	
@@ -30,6 +31,7 @@ function Panel() {
 				)
 			})
 		}
+		</section>
 		</>		
 	)
 }
